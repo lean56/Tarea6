@@ -20,7 +20,7 @@ namespace Tarea6.Entidades
         public string Correo { get; set; }
         public char Sexo { get; set; }
         public string Direccion { get; set; }
-        public virtual List<TipoPersonas> Tipo { get; set; }
+        public int TipoPersonaId { get; set; }
 
 
         public Personas()
@@ -34,6 +34,7 @@ namespace Tarea6.Entidades
             Telefono = string.Empty;
             Correo = string.Empty; 
             Direccion = string.Empty;
+            TipoPersonaId = 0;
         }
     }
 }
