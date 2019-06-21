@@ -11,13 +11,13 @@ namespace Tarea6.Entidades
     {
         [Key]
         public int CargoId { get; set; }
-        public int Nombre { get; set; }
+        public string NombreCargos { get; set; }
         public int EstadoId { get; set; }
 
         public Cargos()
         {
             CargoId = 0;
-            Nombre = 0;
+            NombreCargos = string.Empty;
             EstadoId = 0;
         }
     }
