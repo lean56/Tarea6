@@ -70,6 +70,7 @@
     <Compile Include="BLL\ProductosTests.cs" />
     <Compile Include="BLL\ProveedoresTests.cs" />
     <Compile Include="BLL\TipoComprobantesTests.cs" />
+    <Compile Include="BLL\TipoPersonasTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
