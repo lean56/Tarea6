@@ -57,6 +57,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BLL\CargosTests.cs" />
+    <Compile Include="BLL\CategoriaTests.cs" />
     <Compile Include="BLL\RepositorioBaseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
