@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tarea6.Entidades;
 
 namespace Tarea6.BLL.Tests
 {
@@ -12,45 +13,68 @@ namespace Tarea6.BLL.Tests
     public class VentasTests
     {
         [TestMethod()]
-        public void RepositorioBaseTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
         public void GuardarTest()
         {
-            Assert.Fail();
+            RepositorioBase<Ventas> db = new RepositorioBase<Ventas>();
+
+            Ventas venta = new Ventas()
+            {
+                VentaId = 1,
+                UsuarioId = 1,
+                ClienteId =1,
+                ComprobanteId = 1,
+                FechaVenta = DateTime.Now,
+                Igv = 100,
+                SubTotal = 100,
+                CostoVenta = 100
+            };
+
+            Assert.IsTrue(db.Guardar(venta));
         }
 
         [TestMethod()]
         public void ModificarTest()
         {
-            Assert.Fail();
+            RepositorioBase<Ventas> db = new RepositorioBase<Ventas>();
+
+            Ventas venta = new Ventas()
+            {
+
+                VentaId = 1,
+                UsuarioId = 1,
+                ClienteId = 1,
+                ComprobanteId = 1,
+                FechaVenta = DateTime.Now,
+                Igv = 100,
+                SubTotal = 100,
+                CostoVenta = 100
+            };
+
+            Assert.IsTrue(db.Modificar(venta));
         }
 
         [TestMethod()]
         public void EliminarTest()
         {
-            Assert.Fail();
+            RepositorioBase<Ventas> db = new RepositorioBase<Ventas>();
+
+            Assert.IsTrue(db.Eliminar(1));
         }
 
         [TestMethod()]
         public void BuscarTest()
         {
-            Assert.Fail();
+            RepositorioBase<Ventas> db = new RepositorioBase<Ventas>();
+
+            Assert.IsNotNull(db.Buscar(1));
         }
 
         [TestMethod()]
         public void GetListTest()
         {
-            Assert.Fail();
-        }
+            RepositorioBase<Ventas> db = new RepositorioBase<Ventas>();
 
-        [TestMethod()]
-        public void DisposeTest()
-        {
-            Assert.Fail();
+            Assert.IsNotNull(db.GetList(t => true));
         }
     }
 }
