@@ -60,6 +60,7 @@
     <Compile Include="BLL\CategoriaTests.cs" />
     <Compile Include="BLL\ClientesTests.cs" />
     <Compile Include="BLL\ComprasTests.cs" />
+    <Compile Include="BLL\EmpleadosTests.cs" />
     <Compile Include="BLL\RepositorioBaseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
