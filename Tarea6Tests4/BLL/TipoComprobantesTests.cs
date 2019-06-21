@@ -35,7 +35,7 @@ namespace Tarea6.BLL.Tests
             TipoComprobantes comprobantes = new TipoComprobantes()
             {
                 ComprobanteId = 1,
-                NombreComprobante ="p1"
+                NombreComprobante = "prueba..."
             };
 
             Assert.IsTrue(db.Modificar(comprobantes));

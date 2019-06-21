@@ -35,7 +35,7 @@ namespace Tarea6.BLL.Tests
             TipoPersonas tipoPersonas = new TipoPersonas()
             {
                 TipoPersonaId = 1,
-                PersonaId = 1,
+                PersonaId = 2,
                 Nombre = "p1"
             };
 
