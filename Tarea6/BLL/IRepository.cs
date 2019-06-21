@@ -9,10 +9,10 @@ namespace Tarea6.BLL
 {
     public interface IRepository<T> where T : class
     {
-        List<T> GetList(Expression<Func<T, bool>> expression);
-        T Buscar(int id);
         bool Guardar(T entity);
         bool Modificar(T entity);
+        T Buscar(int id);
+        List<T> GetList(Expression<Func<T, bool>> expression);
         bool Eliminar(int id);
     }
 }
