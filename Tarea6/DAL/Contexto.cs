@@ -17,7 +17,12 @@ namespace Tarea6.DAL
         public DbSet<Categorias> Categoria { get; set; }
         public DbSet<Empleados> empleado { get; set; }
         public DbSet<Compras> Compra { get; set; }
+
+        public DbSet<Estados>estado { get; set; }
+
+
         public Contexto() : base("Constr") { }
+        
         public void FixEfProviderServicesProblem()
         {
             //The Entity Framework provider type 'System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer'
