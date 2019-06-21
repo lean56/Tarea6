@@ -20,7 +20,7 @@ namespace Tarea6.DAL
 
         public DbSet<Estados>estado { get; set; }
 
-
+        public DbSet<Imagenes> imagene { get; set; }
 
 
         public Contexto() : base("Constr") { }
