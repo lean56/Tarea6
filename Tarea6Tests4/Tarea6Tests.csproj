@@ -62,6 +62,7 @@
     <Compile Include="BLL\ComprasTests.cs" />
     <Compile Include="BLL\EmpleadosTests.cs" />
     <Compile Include="BLL\EstadosTests.cs" />
+    <Compile Include="BLL\ImagenesTests.cs" />
     <Compile Include="BLL\RepositorioBaseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
