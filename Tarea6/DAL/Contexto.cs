@@ -23,6 +23,7 @@ namespace Tarea6.DAL
         public DbSet<Imagenes> imagene { get; set; }
 
         public DbSet<Marcas>marca { get; set; }
+        public DbSet<Modelos>modelo { get; set; }
 
 
         public Contexto() : base("Constr") { }
