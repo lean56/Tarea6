@@ -15,7 +15,7 @@ namespace Tarea6.DAL
         public DbSet<Clientes> Cliente { get; set; }
         public DbSet<Compras> Compra { get; set; }
         public DbSet<DetalleCompras>detalleCompra { get; set; }
-       // public DbSet<DetalleVenta> detalleVenta { get; set; }
+        public DbSet<DetalleVenta> detalleVenta { get; set; }
         public DbSet<Empleados> empleado { get; set; }
         public DbSet<Estados> estado { get; set; }
         public DbSet<Imagenes> imagene { get; set; }
