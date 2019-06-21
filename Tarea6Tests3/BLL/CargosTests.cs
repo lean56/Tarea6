@@ -19,8 +19,8 @@ namespace Tarea6.BLL.Tests
 
             Cargos cargo = new Cargos()
             {
-                CargoId = 31,
-                NombreCargos = "Contable",
+                CargoId = 1,
+                NombreCargos = "Prueba 1",
                 EstadoId = 1
             };
 
@@ -28,9 +28,26 @@ namespace Tarea6.BLL.Tests
         }
 
         [TestMethod()]
-        public void GuardarTest1()
+        public void ModificarTest()
         {
-            Assert.Fail();
+            RepositorioBase<Cargos> db = new RepositorioBase<Cargos>();
+
+            Cargos cargo = new Cargos()
+            {
+                CargoId = 0,
+                EstadoId = 1,
+                NombreCargos = "Contabilidad"
+            };
+
+            Assert.IsTrue(db.Modificar(cargo));
+        }
+
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            RepositorioBase<Cargos> db = new RepositorioBase<Cargos>();
+
+            Assert.IsTrue(db.Eliminar(1));
         }
     }
 }

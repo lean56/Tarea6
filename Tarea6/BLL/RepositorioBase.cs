@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -39,9 +40,10 @@ namespace Tarea6.BLL
 
             try
             {
-                _contexto.Entry(entity).State = System.Data.Entity.EntityState.Modified;
 
+                _contexto.Entry(entity).State = EntityState.Modified;
                 paso = _contexto.SaveChanges() > 0;
+               
             }
             catch(Exception)
             {
