@@ -16,8 +16,6 @@ namespace Tarea6.Entidades
         public int ProveedorId { get; set; }
         public int TipoComprobanteId { get; set; }
         public double CostoCompra { get; set; }
-        public virtual List<DetalleCompras> Detalles { get; set; }
-
 
         public Compras()
         {
@@ -27,7 +25,6 @@ namespace Tarea6.Entidades
             ProveedorId = 0;
             TipoComprobanteId = 0;
             CostoCompra = 0;
-            Detalles = new List<DetalleCompras>();
         }
     }
 }

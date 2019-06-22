@@ -73,7 +73,7 @@ namespace Tarea6.BLL.Tests
         {
             RepositorioBase<Personas> db = new RepositorioBase<Personas>();
 
-            Assert.IsNotNull(db.Buscar(2));
+            Assert.IsNotNull(db.Buscar(1));
         }
 
         [TestMethod()]

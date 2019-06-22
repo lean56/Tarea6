@@ -16,25 +16,6 @@ namespace Tarea6.BLL.Tests
         public void GuardarTest()
         {
             RepositorioBase<Compras> db = new RepositorioBase<Compras>();
-            List<DetalleCompras> lista = new List<DetalleCompras>();
-            lista.Add(new DetalleCompras()
-            {
-                CompraId = 1,
-                DetalleCompraId = 1,
-                Unidades = 50,
-                Total = 50,
-                CostoUnidad = 500,
-                ProductoId = 1
-            });
-            lista.Add(new DetalleCompras()
-            {
-                CompraId = 1,
-                DetalleCompraId = 1,
-                Unidades = 100,
-                Total = 140,
-                CostoUnidad = 390,
-                ProductoId = 1
-            });
 
             Compras compra = new Compras()
             {
@@ -44,7 +25,6 @@ namespace Tarea6.BLL.Tests
                 UsuarioId = 1,
                 FechaCompra = DateTime.Now,
                 CostoCompra = 100,
-                Detalles = lista
             };
             Assert.IsTrue(db.Guardar(compra));
         }
@@ -80,7 +60,7 @@ namespace Tarea6.BLL.Tests
         {
             RepositorioBase<Compras> db = new RepositorioBase<Compras>();
 
-            Assert.IsNotNull(db.Buscar(2));
+            Assert.IsNotNull(db.Buscar(1));
         }
 
         [TestMethod()]

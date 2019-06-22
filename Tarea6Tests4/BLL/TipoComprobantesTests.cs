@@ -34,7 +34,7 @@ namespace Tarea6.BLL.Tests
 
             TipoComprobantes comprobantes = new TipoComprobantes()
             {
-                ComprobanteId = 1,
+                ComprobanteId = 2,
                 NombreComprobante = "prueba..."
             };
 

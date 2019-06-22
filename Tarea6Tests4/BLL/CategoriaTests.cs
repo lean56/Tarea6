@@ -19,7 +19,7 @@ namespace Tarea6.BLL.Tests
 
             Categorias categoria = new Categorias()
             {
-                CategoriaId = 2,
+                CategoriaId = 1,
                 NombreCategoria = "Trial 2",
                 Descripcion = "Probando"
             };
@@ -55,7 +55,7 @@ namespace Tarea6.BLL.Tests
         {
             RepositorioBase<Categorias> db = new RepositorioBase<Categorias>();
 
-            Assert.IsNotNull(db.Buscar(2));
+            Assert.IsNotNull(db.Buscar(1));
         }
 
         [TestMethod()]

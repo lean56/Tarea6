@@ -35,7 +35,7 @@ namespace Tarea6.BLL.Tests
 
             Estados estados = new Estados()
             {
-                EstadoId = 2,
+                EstadoId = 1,
                 FechaInicio = DateTime.Now,
                 FechaFin = DateTime.Now,
                 Estado = "nuevo"
@@ -49,7 +49,7 @@ namespace Tarea6.BLL.Tests
         {
             RepositorioBase<Estados> db = new RepositorioBase<Estados>();
 
-            Assert.IsTrue(db.Eliminar(2));
+            Assert.IsTrue(db.Eliminar(1));
         }
 
         [TestMethod()]

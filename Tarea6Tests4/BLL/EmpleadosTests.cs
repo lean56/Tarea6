@@ -49,7 +49,7 @@ namespace Tarea6.BLL.Tests
         {
             RepositorioBase<Empleados> db = new RepositorioBase<Empleados>();
 
-            Assert.IsTrue(db.Eliminar(2));
+            Assert.IsTrue(db.Eliminar(1));
         }
 
         [TestMethod()]

@@ -35,7 +35,7 @@ namespace Tarea6.BLL.Tests
 
             Permisos permisos = new Permisos()
             {
-                PermisoId = 2,
+                PermisoId = 1,
                 Descripcion = "p2",
                 Funcionalidad = "ff"
             };
@@ -56,7 +56,7 @@ namespace Tarea6.BLL.Tests
         {
             RepositorioBase<Permisos> db = new RepositorioBase<Permisos>();
 
-            Assert.IsNotNull(db.Buscar(2));
+            Assert.IsNotNull(db.Buscar(1));
         }
 
         [TestMethod()]
